@@ -10,15 +10,23 @@
 body {
   width: 100%;
   height: 100vh;
+  max-width: 100%;
 }
 
+body.cor{
+  background-color: #00000013;
+}
+
+html{
+  scroll-behavior: smooth;
+}
 /* Titulos */
 
 .titulo_h2 {
   font-family: Inter;
-  font-size: 48px;
+  font-size: 3rem; /*48px*/
   font-weight: 600;
-  line-height: 60px;
+  line-height: 3.75rem; /*60px*/
   letter-spacing: -0.02em;
   text-align: left;
   color: #101828;
@@ -26,9 +34,9 @@ body {
 
 .titulo_h3 {
   font-family: Inter;
-  font-size: 36px;
+  font-size: 2.25rem; /*36px*/
   font-weight: 550;
-  line-height: 44px;
+  line-height: 2.75rem; /*44px*/
   letter-spacing: -0.02em;
   text-align: center;
   color: #101828;
@@ -36,26 +44,26 @@ body {
 
 .titulo_h4 {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 1.25rem; /*20px*/
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1.875rem; /*30px*/
   text-align: left;
   color: #101828;
 }
 
 .titulo_h6 {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem; /*16px*/
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5rem; /*24px*/
   text-align: left;
   color: #8e2424;
 }
 
 .titulo_h1 {
-  font-size: 60px;
+  font-size: 3.75rem; /*60px*/
   font-weight: 600;
-  line-height: 72px;
+  line-height: 4.5rem; /*72px*/
   letter-spacing: -2%;
   font-style: bold;
   color: #8e2424;
@@ -64,8 +72,8 @@ body {
 /* Paragrafos */
 
 .paragrafo_grande {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem; /*20px*/
+  line-height: 1.875rem; /*30px*/
   text-align: justify;
   font-weight: 400;
   color: #667085;
@@ -73,18 +81,17 @@ body {
 
 .paragrafo_medio {
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.125rem; /*18px*/
   font-weight: 500;
-  line-height: 28px;
-  /* text-align: left; */
+  line-height: 1.75re; /*28px*/
   color: #101828;
 }
 
 .paragrafo_pequeno {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem; /*16px*/
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem; /*24px*/
   text-align: left;
   color: #667085;
   text-align: justify;
@@ -109,9 +116,9 @@ nav > .nav_button_logo {
 
 .nav_button_logo > span {
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.125rem; /*18px*/
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem; /*24px*/
   text-align: left;
   color: #3a404e;
 }
@@ -125,17 +132,25 @@ nav > .nav_button_logo {
   gap: 2rem;
 }
 
+.nav_menu_ul.active {
+  left: 0;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.219);
+  transition: all 0.5s;
+  z-index: 1000;
+  background-color: #fff;;
+}
+
 ul > .nav_menu_iten {
   list-style: none;
   cursor: pointer;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 ul > .nav_menu_iten a {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: left;
   color: #667085;
   text-decoration: none;
@@ -144,9 +159,9 @@ ul > .nav_menu_iten a {
 .nav_button_navegacao > .btn_entrar,
 .nav_button_navegacao > .btn_cadastrar {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: left;
   color: #667085;
   padding: 2% 0;
@@ -183,6 +198,10 @@ ul > .nav_menu_iten a {
 /* Sections */
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 6rem;
 }
 
@@ -242,10 +261,10 @@ main {
 
 .alerta_vagas {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 0.875rem; /*14px*/
   font-weight: 500;
-  line-height: 20px;
-  padding: 4px 12px;
+  line-height: 1.25rem; /*20px*/
+  padding: 0.25rem 0.75rem; /* 4px - 12px*/
   color: #8e2424;
   border-radius: 1rem;
   max-width: 50%;
@@ -270,7 +289,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border: solid 1px #EAECF0;
+  border: solid 1px #eaecf0;
   border-radius: 10px;
   padding: 2%;
 }
@@ -291,7 +310,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   gap: 1rem;
 }
 
@@ -306,13 +325,14 @@ main {
 /* Footer */
 
 footer {
+  width: 100%;
   background-color: #fdf8f8;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 
 .container_formulario {
@@ -326,6 +346,7 @@ footer {
 .container_formulario > form {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .container_formulario > form > input {
@@ -347,9 +368,108 @@ footer {
 
 .formulario_footer_text {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: left;
   color: #98a2b3;
+}
+
+@media (width <= 1475px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  main {
+    padding: 0 2rem;
+  }
+
+  .section_about {
+    padding: 2rem;
+  }
+
+  .section_metricas {
+    padding: 0 0 2rem 0;
+  }
+
+  .vagas_talentos img {
+    width: 100%;
+  }
+}
+
+@media (width <= 975px) {
+
+  nav > .nav_button_logo {
+    display: initial;
+    visibility: visible;
+  }
+
+  .nav_menu_links > ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    width: 45%;
+    transition: all 2s;
+    height: 100vh;
+    gap: 0;
+  }
+
+  .nav_button_navegacao {
+    flex-direction: column;
+  }
+
+  .nav_menu_links > ul> li{
+    width: 100%;
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@media (width <= 876px) {
+
+  .nav_button_navegacao {
+    display: none;
+  }
+
+  .section_about {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .section_metricas {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding: 0 0 6rem 0;
+  }
+
+  footer {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (width <= 500px) {
+  main {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .section_about,
+  .section_depoimentos,
+  .section_metricas,
+  .section_vagas {
+    padding: 1.2rem;
+  }
+
+  .section_metricas {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+  }
+
+  .vagas_abertas {
+    width: 90%;
+  }
+
 }
