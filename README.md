@@ -1,24 +1,24 @@
-![](img/homeProject.png)
+![](assets/image/apresentacao.gif)
 
 # Landing Page - OptimusTech
 
-# Descrição
+## 📖 Descrição
 
 
 Este projeto é um desafio #7DaysOfCode que tem o objetivo de criar uma página para uma empresa de TI onde está empresa deseja realizar novas contratações.
 
-# Objetivo
+## 🎯 Objetivo
 
 ° Desenvolver uma página destinada a novas contratações, seguindo o layout disponibilizado no Figma.
 
-# Tecnologias 
+## 🛠️ Tecnologias 
 
-° HTML  
+<img src="assets/image/html.png" width="50" height="50">
 
-° CSS  
+<img src="assets/image/css.png" width="50" height="50">
 
-° JavaScript  
+<img src="assets/image/js.png" width="50" height="50">
 
-# Status do Projeto
+## ⌛ Status do Projeto
 
 Concluído
