@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Titulos */
+
+.titulo_h2 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #101828;
+}
+
+.titulo_h3 {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 550;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #101828;
+}
+
+.titulo_h4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #101828;
+}
+
+.titulo_h6 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #8e2424;
+}
+
+.titulo_h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -2%;
+  font-style: bold;
+  color: #8e2424;
+}
+
+/* Paragrafos */
+
+.paragrafo_grande {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  font-weight: 400;
+  color: #667085;
+}
+
+.paragrafo_medio {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  /* text-align: left; */
+  color: #101828;
+}
+
+.paragrafo_pequeno {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #667085;
+  text-align: justify;
+}
+
+/* Header */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+  flex-wrap: wrap;
+}
+
+/* Header - Logo */
+nav > .nav_button_logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav_button_logo > span {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #3a404e;
+}
+
+/* Header - Menu de navegacao */
+
+.nav_menu_links > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+ul > .nav_menu_iten {
+  list-style: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+ul > .nav_menu_iten a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #667085;
+  text-decoration: none;
+}
+
+.nav_button_navegacao > .btn_entrar,
+.nav_button_navegacao > .btn_cadastrar {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #667085;
+  padding: 2% 0;
+}
+
+.nav_button_navegacao > .btn_entrar {
+  background-color: #ffffff;
+  outline: none;
+  padding: 0.625rem 1.125rem;
+  border-radius: 8px;
+  color: #706e6e;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.nav_button_navegacao > .btn_cadastrar {
+  background-color: #8e2424;
+  outline: none;
+  padding: 0.625rem 1.125rem;
+  border-radius: 8px;
+  color: #ffffff;
+  border: solid 1px #8e2424;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.nav_button_navegacao > .btn_entrar:hover,
+.nav_button_navegacao > .btn_cadastrar:hover,
+.nav_menu_lista_iten:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+
+main {
+  padding: 0 6rem;
+}
+
+/* Section About */
+
+.section_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 6rem 12rem;
+}
+
+/* Section metricas */
+
+.section_metricas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  padding: 0 0 6rem 0;
+}
+
+.container_metricas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2%;
+}
+
+/* Section Vagas */
+
+.section_vagas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.vagas_talentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.talentos_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alerta_vagas {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 4px 12px;
+  color: #8e2424;
+  border-radius: 1rem;
+  max-width: 50%;
+  border: #8e2424 solid 1px;
+  background-color: #8e24240d 5%;
+}
+
+.vagas_abertas {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 2rem;
+}
+
+.vagas_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.content_item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: solid 1px #EAECF0;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+/* Section depoimentos */
+
+.section_depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.depoimentos_container {
+  background-color: #fdf8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.depoimentos_info {
+  text-align: center;
+}
+
+.depoimentos_info > .paragrafo_medio {
+  margin: 0.4rem 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #fdf8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.container_formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container_formulario > form {
+  display: flex;
+  gap: 1rem;
+}
+
+.container_formulario > form > input {
+  outline: none;
+  border: solid 1px rgb(226, 217, 217);
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.container_formulario > form > button {
+  background-color: #8e2424;
+  outline: none;
+  border: solid 1px rgb(226, 217, 217);
+  padding: 3%;
+  border-radius: 5px;
+  color: #f3ebeb;
+  cursor: pointer;
+}
+
+.formulario_footer_text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #98a2b3;
+}
