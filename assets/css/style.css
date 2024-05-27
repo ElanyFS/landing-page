@@ -13,11 +13,11 @@ body {
   max-width: 100%;
 }
 
-body.cor{
+body.cor {
   background-color: #00000013;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 /* Titulos */
@@ -137,7 +137,7 @@ nav > .nav_button_logo {
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.219);
   transition: all 0.5s;
   z-index: 1000;
-  background-color: #fff;;
+  background-color: #fff;
 }
 
 ul > .nav_menu_iten {
@@ -398,7 +398,6 @@ footer {
 }
 
 @media (width <= 975px) {
-
   nav > .nav_button_logo {
     display: initial;
     visibility: visible;
@@ -420,7 +419,7 @@ footer {
     flex-direction: column;
   }
 
-  .nav_menu_links > ul> li{
+  .nav_menu_links > ul > li {
     width: 100%;
     display: block;
     padding: 1rem;
@@ -428,7 +427,6 @@ footer {
 }
 
 @media (width <= 876px) {
-
   .nav_button_navegacao {
     display: none;
   }
@@ -471,5 +469,4 @@ footer {
   .vagas_abertas {
     width: 90%;
   }
-
 }
